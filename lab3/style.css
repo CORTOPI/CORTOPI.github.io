@@ -1,3 +1,4 @@
+
 body {
             background-color: black;
             color: azure;
@@ -8,12 +9,23 @@ body {
             text-align: right;
         }
         h1,h2 {
-            color: crimson;
-            font-family: sans-serif;
+            color: rgb(2, 2, 202);
+            font-family: 'Roboto',sans-serif;
             text-align: right;
         }
+
+        strong{
+            font-family: 'Caveat',sans-serif;
+        }
         i,em,b{
-            color: aquamarine;
+            color: rgb(255, 200, 247);
+        }
+
+        article{
+            border: 3px solid pink;
+            border-radius: 10px;
+            margin: 2em 1em 2em;
+            padding: 10px 40px;
         }
 
         .wrapper {
