@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+		<meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="fontawesome/css/all.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.4/css/all.min.css">
+
+		<title>Оформление вертикального меню</title>
+		<style>
+			html {
+					background: #f0f0f0;
+			}
+			
+			.menu {
+					width: 200px;
+					background: #fff;
+			}
+			
+			.menu ul {
+					
+			}
+			
+			.menu li {
+					
+			}
+			
+			.menu li a {
+				color: #6188b0;	
+			}
+			
+			.menu li a:hover {
+                display: block;
+					
+			}
+			
+			.menu li ul {
+					
+			}
+			
+			.menu li li {
+					
+			}
+	</style>
+</head>
+<body>
+	<nav class="menu">
+		<ul>
+			<li><a href="#">Фильмы</a>
+				<ul>
+					<li><a href="#">Экшн</a></li>
+					<li><a href="#">Мелодрамы</a></li>
+					<li><a href="#">Сериалы</a></li>
+					<li><a href="#">Семейные</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Музыка</a>
+				<ul>
+					<li><a href="#">Классика</a></li>
+					<li><a href="#">Джаз</a></li>
+					<li><a href="#">Рок</a></li>
+					<li><a href="#">Грандж</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Софт</a>
+				<ul>
+					<li><a href="#">Графика</a></li>
+					<li><a href="#">3D-моделирование</a></li>
+					<li><a href="#">Машинопись</a></li>
+					<li><a href="#">Переводчики</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Игры</a>
+				<ul>
+					<li><a href="#">РПГ</a></li>
+					<li><a href="#">Шутеры</a></li>
+					<li><a href="#">Пасьянсы</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+    <style>
+        .icon::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            float: left;
+            margin-right: 4px;
+			font-family: "Font Awesome 5 Free";
+        }
+        .icon.point::before {
+			content: '\f192';
+            background-position: -16px -16px;
+        }
+        .icon.minus::before {
+			content: '\f146';
+            background-position: -16px -63px;
+        }
+		.icon.plus::before {
+			content: '\f0fe';
+            background-position: -16px -63px;
+        }
+        ul {
+            list-style: none;
+        }
+		.menu ul li ul {
+			display: none;
+		}
+		.menu ul li:hover ul {
+			display: block;
+		}
+		.menu ul li:hover .icon.plus::before {
+			content: '\f146';
+            background-position: -16px -63px;
+        }
+    </style>
+</body>
+</html>
