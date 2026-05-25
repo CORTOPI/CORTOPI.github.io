@@ -1,0 +1,383 @@
+
+
+/* ---------- ПЕРЕМЕННЫЕ (ЦВЕТОВАЯ СХЕМА) ---------- */
+:root {
+    --pink-light: #f8d4e4;
+    --pink-soft: #f5a9c4;
+    --pink-main: #e8437c;
+    --pink-dark: #c73467;
+    --peach: #fce4d6;
+    --gray-dark: #2d2a2c;
+    --gray-text: #5a4a4f;
+    --gray-light: #6b5b60;
+    --bg-light: #fffafc;
+    --bg-gray: #f8f9fa;
+}
+
+/* ---------- ГЛОБАЛЬНЫЕ СТИЛИ ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-light);
+    color: var(--gray-dark);
+}
+
+h1, h2, h3, .logo-text, .footer-logo {
+    font-family: 'Playfair Display', serif;
+}
+
+/* ---------- КНОПКИ ---------- */
+.btn-custom {
+    background-color: var(--pink-main);
+    color: white;
+    border-radius: 50px;
+    padding: 12px 32px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: var(--pink-dark);
+    transform: scale(1.02);
+    color: white;
+}
+
+.btn-outline-custom {
+    border: 2px solid var(--pink-main);
+    color: var(--pink-main);
+    border-radius: 50px;
+    padding: 10px 28px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.btn-outline-custom:hover {
+    background-color: var(--pink-main);
+    color: white;
+}
+
+/* ---------- НАВИГАЦИЯ (ШАПКА) ---------- */
+.navbar {
+    background-color: rgba(255, 250, 252, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    padding: 15px 0;
+}
+
+.logo-text {
+    color: var(--pink-main) !important;
+}
+
+.nav-link {
+    color: var(--gray-text) !important;
+    font-weight: 500;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--pink-main) !important;
+}
+
+/* ---------- HERO (ГЛАВНЫЙ ЭКРАН) ---------- */
+.hero {
+    background: linear-gradient(135deg, #fff5f9 0%, #feebeef5 100%);
+    padding: 120px 0 80px 0;
+    margin-top: 0;
+}
+
+.hero-title {
+    color: var(--gray-dark);
+}
+
+.hero-text {
+    color: var(--gray-light);
+}
+
+.badge-hello {
+    background-color: var(--pink-soft);
+    color: var(--gray-text);
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-photo {
+    width: 100%;
+    max-width: 380px;
+    border-radius: 50%;
+    box-shadow: 0 25px 40px rgba(232, 67, 124, 0.2);
+    border: 5px solid white;
+}
+
+.stat-number {
+    color: var(--pink-main);
+}
+
+.stat-label {
+    color: var(--gray-light);
+    font-size: 0.9rem;
+}
+
+/* ---------- СЕКЦИЯ УСЛУГ ---------- */
+.services-section {
+    padding: 80px 0;
+}
+
+.section-badge {
+    background-color: white;
+    color: var(--pink-main);
+    padding: 6px 18px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    display: inline-block;
+    border: 1px solid var(--pink-soft);
+}
+
+.section-title {
+    color: var(--gray-dark);
+}
+
+.section-divider {
+    width: 70px;
+    height: 3px;
+    background-color: var(--pink-main);
+    margin: 15px auto;
+}
+
+.section-subtitle {
+    color: var(--gray-light);
+}
+
+/* Карточки услуг */
+.service-card {
+    background: white;
+    border-radius: 24px;
+    padding: 35px 25px;
+    transition: all 0.4s ease;
+    border: 1px solid rgba(245, 169, 196, 0.2);
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.02);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(232, 67, 124, 0.1);
+    border-color: var(--pink-soft);
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: var(--pink-main);
+    margin-bottom: 20px;
+}
+
+.service-text {
+    color: var(--gray-light);
+}
+
+.service-price {
+    color: var(--pink-main);
+    font-size: 1.25rem;
+}
+
+/* ---------- ПОРТФОЛИО ---------- */
+.portfolio-section {
+    background-color: var(--bg-gray);
+    padding: 80px 0;
+}
+
+.portfolio-img {
+    border-radius: 20px;
+    transition: 0.4s;
+    cursor: pointer;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.portfolio-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(232, 67, 124, 0.2);
+}
+
+/* ---------- СЕКЦИЯ "ОБО МНЕ" ---------- */
+.about-section {
+    padding: 80px 0;
+    background-color: var(--bg-light);
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    box-shadow: 0 25px 40px rgba(232, 67, 124, 0.15);
+    border: 4px solid white;
+}
+
+.about-divider {
+    width: 70px;
+    height: 3px;
+    background-color: var(--pink-main);
+    margin: 15px 0;
+}
+
+.about-title {
+    color: var(--gray-dark);
+}
+
+.about-lead {
+    color: var(--gray-light);
+}
+
+.about-text {
+    color: var(--gray-text);
+    line-height: 1.7;
+}
+
+.about-features p {
+    margin-bottom: 12px;
+    color: var(--gray-text);
+}
+
+.about-features i {
+    color: var(--pink-main);
+    margin-right: 10px;
+}
+
+/* ---------- ФУТЕР ---------- */
+.footer {
+    background-color: var(--gray-dark);
+    color: #f0eef0;
+    padding: 60px 0 30px 0;
+}
+
+.footer-logo {
+    color: var(--pink-soft);
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    color: #cfc5c9;
+}
+
+.footer-heading {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--pink-soft);
+}
+
+.footer a {
+    color: var(--pink-soft);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: var(--pink-main);
+}
+
+.footer hr {
+    margin: 30px 0;
+    background-color: #5a4a4f;
+}
+
+.footer .copyright {
+    color: #9a8a8f;
+}
+
+/* ---------- АДАПТИВНОСТЬ (МОБИЛЬНЫЕ УСТРОЙСТВА) ---------- */
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 0 60px 0;
+        text-align: center;
+    }
+    
+    .hero-photo {
+        max-width: 260px;
+        margin-top: 30px;
+    }
+    
+    .stats {
+        justify-content: center;
+    }
+    
+    .services-section,
+    .portfolio-section,
+    .about-section {
+        padding: 50px 0;
+    }
+    
+    .about-photo {
+        max-width: 220px;
+        margin-bottom: 30px;
+    }
+    
+    .about-divider {
+        margin: 15px auto;
+    }
+    
+    .about-section .text-center {
+        text-align: center;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-custom, .btn-outline-custom {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .service-card {
+        padding: 25px 20px;
+    }
+    
+    .stats {
+        gap: 1.5rem !important;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+}
+
+/* ---------- ДОПОЛНИТЕЛЬНО: ПЛАВНЫЙ СКРОЛЛ ---------- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Кастомизация скроллбара (для Chrome) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--pink-soft);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--pink-main);
+}

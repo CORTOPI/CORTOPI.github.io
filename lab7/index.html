@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анна Смирнова | Beauty-визажист</title>
+    
+    <!-- Bootstrap 5.3 + иконки -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Подключаем отдельный CSS файл -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= ШАПКА САЙТА ================= -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-2 logo-text" href="#">✨ Anna Smirnova</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Портфолио</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Обо мне</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= ГЛАВНЫЙ ЭКРАН (HERO) ================= -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7">
+                    <span class="badge-hello">Hello, I'm Anna ✨</span>
+                    <h1 class="display-3 fw-bold mt-3 hero-title">Beauty-визажист <br>и стилист</h1>
+                    <p class="lead mt-3 hero-text">Создаю нежный, естественный и фотогеничный макияж для важных событий, съемок и повседневной жизни.</p>
+                    <div class="mt-4 d-flex gap-3 flex-wrap">
+                        <a href="#contact" class="btn btn-custom">Записаться на макияж</a>
+                        <a href="#portfolio" class="btn btn-outline-custom">Смотреть работы</a>
+                    </div>
+                    <div class="mt-5 d-flex gap-4 stats">
+                        <div><span class="fw-bold fs-3 stat-number">120+</span><br><span class="stat-label">довольных клиентов</span></div>
+                        <div><span class="fw-bold fs-3 stat-number">5 лет</span><br><span class="stat-label">в beauty-индустрии</span></div>
+                        <div><span class="fw-bold fs-3 stat-number">24/7</span><br><span class="stat-label">выезд к клиенту</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="https://images.pexels.com/photos/3785123/pexels-photo-3785123.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Анна визажист" class="hero-photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= БЛОК УСЛУГ ================= -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">что я предлагаю</span>
+                <h2 class="display-5 fw-bold mt-2 section-title">Мои услуги</h2>
+                <div class="section-divider"></div>
+                <p class="lead section-subtitle">Индивидуальный подход к каждой девушке</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon"><i class="bi bi-flower2"></i></div>
+                        <h3 class="h4 fw-bold">Дневной макияж</h3>
+                        <p class="mt-3 service-text">Свежий, натуральный образ для работы, встреч или прогулок.</p>
+                        <p class="fw-bold mt-2 service-price">от 3500 ₽</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon"><i class="bi bi-stars"></i></div>
+                        <h3 class="h4 fw-bold">Вечерний макияж</h3>
+                        <p class="mt-3 service-text">Яркий и выразительный образ для праздников, дней рождения, выпускного.</p>
+                        <p class="fw-bold mt-2 service-price">от 5500 ₽</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon"><i class="bi bi-camera"></i></div>
+                        <h3 class="h4 fw-bold">Свадебный макияж</h3>
+                        <p class="mt-3 service-text">Нежный, стойкий образ, который продержится весь ваш важный день.</p>
+                        <p class="fw-bold mt-2 service-price">от 8000 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ПОРТФОЛИО ================= -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-badge">мои работы</span>
+                <h2 class="display-5 fw-bold mt-2 section-title">Портфолио</h2>
+                <div class="section-divider"></div>
+                <p class="lead section-subtitle">Вдохновляйтесь образами, которые я создаю</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6">
+                    <img src="img/13862711350844480.jpg" class="portfolio-img" alt="макияж 1">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="img/makeup.jpg" class="portfolio-img" alt="макияж 2">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="img/flora ( winx ).jpg" class="portfolio-img" alt="макияж 3">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="img/3729612269396422.jpg" class="portfolio-img" alt="макияж 4">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="img/6614730698437942.jpg" class="portfolio-img" alt="макияж 5">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <img src="img/7881368095650128.jpg" class="portfolio-img" alt="макияж 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= БЛОК "ОБО МНЕ" ================= -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 text-center">
+                    <img src="https://images.pexels.com/photos/3811080/pexels-photo-3811080.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Анна" class="about-photo">
+                </div>
+                <div class="col-lg-6">
+                    <span class="section-badge">немного обо мне</span>
+                    <h2 class="display-5 fw-bold mt-2 about-title">Анна Смирнова</h2>
+                    <div class="about-divider"></div>
+                    <p class="lead about-lead">Визажист с душой художника и вниманием к деталям</p>
+                    <p class="about-text">Я обожаю подчеркивать природную красоту каждой девушки. Мой стиль — это свежесть, сияние кожи, ухоженность и индивидуальность. Работаю с премиальной косметикой (Chanel, Dior, NARS, Huda Beauty).</p>
+                    <div class="mt-4 about-features">
+                        <p><i class="bi bi-check-circle-fill"></i> <strong>Образование:</strong> Школа визажа "Beauty Pro", 2019</p>
+                        <p><i class="bi bi-check-circle-fill"></i> <strong>Участие:</strong> Неделя моды в Москве, Mercedes-Benz Fashion Week</p>
+                        <p><i class="bi bi-check-circle-fill"></i> <strong>Сотрудничество:</strong> Фотографы, модели, блогеры</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ФУТЕР ================= -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <h3 class="footer-logo">✨ Anna Smirnova</h3>
+                    <p class="footer-text">Создаю макияж, в который вы влюбитесь.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="footer-heading">Контакты</h5>
+                    <p><i class="bi bi-instagram me-2"></i> <a href="#">@anna.makeup_art</a></p>
+                    <p><i class="bi bi-telegram me-2"></i> <a href="#">t.me/anna_beauty</a></p>
+                    <p><i class="bi bi-whatsapp me-2"></i> <a href="#">+7 (999) 888-77-66</a></p>
+                    <p><i class="bi bi-envelope me-2"></i> anna.beauty@mail.ru</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="footer-heading">Работаю</h5>
+                    <p><i class="bi bi-calendar-check me-2"></i> Пн-Сб: 10:00 - 21:00</p>
+                    <p><i class="bi bi-geo-alt me-2"></i> Выезд по всему городу<br>➕ студия в центре</p>
+                </div>
+            </div>
+            <hr class="footer-hr">
+            <div class="text-center">
+                <p class="mb-0 small copyright">© 2025 Анна Смирнова | Красота, которая начинается с вас</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
